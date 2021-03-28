@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<html lang = "pt-br">
+
+<head>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilo.css">
+
+<title id = "titulo">Projeto Pomodoro</title>
+
+</head>
+
+<body>
+    <h1 class = "cabecario" id = "cabecario">Projeto Pomodoro</h1>
+<div id = "container" class = "container">
+
+    <div class = "janelaconf" id = "janelaconf">
+        <span class = "fecharconf" onclick = "fecharconf ()">&times;</span>
+        <form>
+            <h2>Configurar</h2>
+            <label>Minutos: </label>
+            <input id = "confminutos" type = "number" min = "0" value = "50">
+
+            <label>Segundos: </label>
+            <input id = "confsegundos" type = "number" min = "0" step = "1" value = "0">
+            <input type="button" value="OK" class = "botao" onclick = "configurar ()">
+        </form>
+    </div>
+
+    <div class = "time">
+        <h2 id = "timer" class = "timer"></h2>
+        <button id = "acionista" class = "botao" onclick = "acionar ()">Iniciar</button>
+        <button id = "abrirconf" class = "botao" onclick = "abrirconf ()">Configurações</button>
+
+    </div>
+
+
+
+</div>
+
+
+
+</body>
+
+
+<img src="recursos/spinner.gif" alt="Carregando..." id = "loading" class = "loading"/>
+
+<script src="funcionalidade.js"></script>
+</html>
